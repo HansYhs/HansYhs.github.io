@@ -272,134 +272,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hansyhs.github.io/2017/11/25/Git-Study-Notebook/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hans">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hans's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/25/Git-Study-Notebook/" itemprop="url">Git - Study Notebook</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-25T20:18:07+08:00">
-                2017-11-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Git-Study-Notebook-by-hans"><a href="#Git-Study-Notebook-by-hans" class="headerlink" title="Git - Study Notebook by hans"></a>Git - Study Notebook by hans</h1><p><img src="https://cdn.webxueyuan.com/cdn/files/attachments/0013848605496402772ffdb6ab448deb7eef7baa124171b000/0" alt="git logo"></p>
-<h2 id="1-Installation"><a href="#1-Installation" class="headerlink" title="1.Installation"></a>1.Installation</h2><h3 id="MAC"><a href="#MAC" class="headerlink" title="MAC"></a>MAC</h3><pre><code>brew install git
-</code></pre><h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p><a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p>
-<h2 id="2-Initialization"><a href="#2-Initialization" class="headerlink" title="2. Initialization"></a>2. Initialization</h2><h3 id="…or-create-a-new-repository-on-the-command-line"><a href="#…or-create-a-new-repository-on-the-command-line" class="headerlink" title="…or create a new repository on the command line"></a>…or create a new repository on the command line</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;# GitTest&quot; &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git remote add origin https://github.com/HansYhs/GitTest.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-<h3 id="…or-push-an-existing-repository-from-the-command-line"><a href="#…or-push-an-existing-repository-from-the-command-line" class="headerlink" title="…or push an existing repository from the command line"></a>…or push an existing repository from the command line</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/HansYhs/GitTest.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-<h2 id="3-Reset"><a href="#3-Reset" class="headerlink" title="3.Reset"></a>3.Reset</h2><p><img src="https://cdn.webxueyuan.com/cdn/files/attachments/001384907702917346729e9afbf4127b6dfbae9207af016000/0" alt="reset image"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git reflog </span><br><span class="line">git diff master..origin/master </span><br><span class="line">git checkout -- readme.txt</span><br><span class="line">git reset --hard *number*</span><br><span class="line">git push --force origin master</span><br></pre></td></tr></table></figure>
-<h2 id="4-Branch"><a href="#4-Branch" class="headerlink" title="4.Branch"></a>4.Branch</h2><p><img src="https://cdn.webxueyuan.com/cdn/files/attachments/001384908633976bb65b57548e64bf9be7253aebebd49af000/0" alt="branch image"></p>
-<h3 id="base-operation"><a href="#base-operation" class="headerlink" title="base operation"></a>base operation</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br><span class="line">git log --graph</span><br><span class="line"></span><br><span class="line">git branch dev</span><br><span class="line">git checkout dev</span><br><span class="line">git checkout -b dev</span><br><span class="line"></span><br><span class="line">git branch -d dev</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://hansyhs.github.io/2017/11/25/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -561,7 +433,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
